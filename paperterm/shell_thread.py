@@ -1,4 +1,3 @@
-from __future__ import print_function, unicode_literals
 import threading, Queue
 import time
 import pwd
@@ -116,7 +115,7 @@ class ShellThread(threading.Thread):
                 output = self.slave_process.read()
                 # output = self.slave_io.read()
                 self.display_q.put(output)
-            except Exception, e:
+            except Exception:
                 # print(str(e))
                 pass # haha, I'll pass ]:->
             # time.sleep(0.8)

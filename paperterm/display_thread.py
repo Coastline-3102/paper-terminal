@@ -1,9 +1,9 @@
-from __future__ import print_function, unicode_literals
-import threading, Queue
+import threading
+from queue import Queue
 # import spidev as SPI
 # import EPD_driver
-import epd2in9
-import Image, ImageDraw, ImageFont
+from waveshare_epd import epd2in9
+from PIL import Image, ImageDraw, ImageFont
 import pyte
 import time
 import logging
@@ -153,7 +153,7 @@ class DisplayThread(threading.Thread):
         while not self.stoprequest.isSet():
             try:
                 self.refresh_screen()
-            except Exception, e:
+            except Exception:
                 #print(str(e))
                 logging.exception("display thread exception")
             time.sleep(0.03) # omg, some callback or shit?
