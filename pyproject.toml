@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "paper-terminal"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pam = "^0.2"
+ptyprocess = "^0.7"
+pyte = "^0.8"
+wcwidth = "^0.2"
+pillow = "^10.2.0"
+gpiozero = "^2.0.1"
+spidev = "^3.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
