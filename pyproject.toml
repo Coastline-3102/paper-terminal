@@ -14,6 +14,9 @@ wcwidth = "^0.2"
 pillow = "^10.2.0"
 gpiozero = "^2.0.1"
 spidev = "^3.6"
+lgpio = "^0.0.0.2"
+rpi-gpio = "^0.7.1"
+pigpio = "^1.78"
 
 
 [build-system]
